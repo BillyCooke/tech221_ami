@@ -27,7 +27,7 @@ The diagram below shows the interactions with an AMI to instances. You can creat
 
 ![img.png](img.png)
 
-## You can add Nginx in AWS without having to use Git Bash
+## You can add Nginx in AWS without using Git Bash
 * When you are setting up an instance follow all the normal steps
 * In additional details scroll to the bottom to user data
 * In user data enter the script below
