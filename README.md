@@ -26,3 +26,34 @@ An AMI is an Amazon Machine image that contains software configuration and from 
 The diagram below shows the interactions with an AMI to instances. You can create one or multiple instances from a single AMI.
 
 ![img.png](img.png)
+
+## You can add Nginx in AWS without having to use Git Bash
+* When you are setting up an instance follow all the normal steps
+* In additional details scroll to the bottom to user data
+* In user data enter the script below
+```* #!/bin/bash
+* sudo apt update -y
+* sudo apt update -y
+* sudo apt install nginx -y
+* sudo systemctl restart nginx
+* sudo systemctl enable nginx
+```
+* Then launch the instance as normal
+
+## Variables in Linux
+* When you are linked into AWS via SSH on Git Bash follow the below
+* To see the list of environment variables already listed use ```printenv``` or ```env```
+* To see a specific variable use ```printenv 'name of variable'```. If nothing comes up then the variable does not exist
+* To create a variable use ```'name of variable'='data'```. For example ```MY_NAME=billy``` created the variable MY_NAME and assigns it the value billy
+* To see a variable use ```echo $'name of variable'```. Example ```echo $MY_NAME``` will bring up billy
+* To create an environment variable use ```export 'name of variable'='data'```. Example ```export LAST_NAME=cooke```
+* To see the environment variable in the list use ```printenv``` or ```env```
+* To see the environment variable on its own use ```printenv 'name of variable```
+* If you come out of the Linux environment in Git Bash none of the above will save
+* To save a variable permanently use the below
+* Enter ```sudo nano .bashrc``` and this will bring up all the persistent variables
+* Scroll to the bottom and type ```export 'name of variable'='data'```. Example ```export name=billy```
+* Then use ```ctrl s``` to save and ```ctrl x``` to exit
+* To view the .bashrc file use ```cat .bashrc```
+* To refresh .bashrc to implement the changes you have made use ```source .bashrc```
+* To check it has worked use ```printenv 'name of variable``` and it should show the persistent variable you have made
