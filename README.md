@@ -1,4 +1,7 @@
-# Creating an instance with a previously used AMI
+# Creating an instance with an AMI
+
+## What is an AMI?
+An AMI is an Amazon Machine image that contains software configuration and from this you can launch instances.
 
 ## We can create an AMI using a previously made instance by following the steps below
 * Select your running instance and click the actions drop down at the top of the page and then select image and templates
