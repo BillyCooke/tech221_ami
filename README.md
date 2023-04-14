@@ -22,4 +22,4 @@
 ## Diagram of an AMI
 The diagram below shows the interactions with an AMI to instances. You can create one or multiple instances from a single AMI.
 
-![architecture_ami_instance.png](..%2F..%2F..%2FOneDrive%2FDocuments%2FSparta%20Global%2Farchitecture_ami_instance.png)
+![img.png](img.png)
