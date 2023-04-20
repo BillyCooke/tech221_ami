@@ -57,3 +57,15 @@ The diagram below shows the interactions with an AMI to instances. You can creat
 * To view the .bashrc file use ```cat .bashrc```
 * To refresh .bashrc to implement the changes you have made use ```source .bashrc```
 * To check it has worked use ```printenv 'name of variable``` and it should show the persistent variable you have made
+
+## To view the permissions on a file
+* ```ls -l```
+
+## Setting permissions in Linux
+* 'r' is for read
+* 'w' is for write
+* 'x' is for execute
+* chmod +rwx 'filename' to add permissions
+* chmod -rwx 'filename' to remove permissions
+* chmod +x 'filename' to allow executable permissions
+* chmod 'filename' to take out write and executable permissions
